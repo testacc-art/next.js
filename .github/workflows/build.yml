@@ -16,6 +16,7 @@ jobs:
     - uses: dmitry-shibanov/setup-node@add-caching
       with:
         node-version: ${{ matrix.version }}
+        cache: yarn
     - name: Node version
       shell: pwsh
       run: node --version
